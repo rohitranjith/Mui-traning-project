@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #2a3547 !important;
+}
+
+.tabpanel-pad>div:first-child {
+  padding: 24px 0px;
+}
+
+.sidebar .active {
+  position: relative;
+}
+
+.sidebar .active::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  border-radius: 4px;
+  width: 3px;
+  transition: 0.4s;
+  background: #274472;
+  height: 85%;
+}
+
+.active svg,
+.active span {
+  color: #274472;
+  font-weight: 500;
+}
+
+
+.overflow-scroll::-webkit-scrollbar-track {
+  background-color: #cedff9;
+  border-radius: 12px;
+}
+
+.overflow-scroll::-webkit-scrollbar {
+  width: 6px;
+  background-color: #ecf2ff;
+}
+
+.overflow-scroll::-webkit-scrollbar-thumb {
+  background-color: #1976d2;
+  background-image: -webkit-linear-gradient(45deg,
+      rgba(255, 255, 255, .2) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, .2) 50%,
+      rgba(255, 255, 255, .2) 75%,
+      transparent 75%,
+      transparent)
+}
+
+/* Crossandro Styles */
+
+.bg-gradient {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(360deg, rgba(255, 255, 255, 1) 0%, rgba(243, 246, 255, 1) 50%);
+}
+
+.css-5xe99f-MuiLinearProgress-bar1 {
+  background-color: #633ccf !important;
+}
+
+.scroll-none::-webkit-scrollbar {
+  display: none;
+}
+
+.stepper-color .Mui-active,
+.stepper-color .Mui-completed {
+  color: #633ccf !important;
+}
+
+/* Crossandro Design */
+
+.triangle-design {
+  width: 496px;
+  height: 435px;
+  position: absolute;
+  top: 0px;
+  background: #fff;
+  z-index: 0;
+}
+
+.triangle-design::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  border-right: 496px solid #56cae1;
+  border-top: 750px solid transparent;
+}
+
+.triangle-design-bottom::before {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  border-top: 268px solid #56cae1;
+  border-left: 480px solid transparent;
+}
+
+.prop-desc-tc {
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+.text-truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+.img-hover-top:hover label div,
+.img-hover-bot:hover label div {
+  visibility: visible !important;
+  opacity: 1;
+}
